@@ -6,12 +6,24 @@ Dali is a high performance graphics API that runs on modern GPUs.
 Thanks to WebGPU, it is cross-platform, running either in a web browser
 using WASM, or running natively on Windows, Linux, MacOS, Android and iOS.
 
-Dali is a hybrid 2D/3D graphics API that goes far beyond the postscript/SVG 2D graphics model.
-It is extensible. Instead of being restricted to a fixed set of graphics primitives (as in SVG),
-you can define new primitives procedurally, as operations on signed distance fields.
-So in addition to SVG primitives, you can also define fractals, non-affine transformations
-such as twist and bend, and graphics combinators such as blending and morphing, or
-any of the effects seen on [ShaderToy.com](https://shadertoy.com/).
+Dali is an extensible 2D/3D graphics API that goes far beyond the postscript/SVG 2D graphics model.
+* Dali begins with SVG style scalable 2D vector graphics (which are resolution independent).
+* You can define new graphics primitives procedurally, as operations on signed distance fields.
+  These may be 2D or 3D, and are resolution independent.
+  You can define fractals, non-affine transformations such as twist and bend,
+  graphics combinators such as booleans, blending and morphing, or
+  any of the effects seen on [ShaderToy.com](https://shadertoy.com/).
+  The Dali graphics engine evaluates SDF primitives more efficiently than ShaderToy code:
+  you can have a large number of primitives on the screen without slowing down.
+* Dali supports the usual graphical data structures: images, voxel grids
+  and triangle meshes.
+* Colour is modelled either using procedural textures (which are resolution independent)
+  or using texture maps (which are discrete).
 
 Using Dali, there are no limits to what a graphical user interface can look like.
 You aren't boxed in by the SVG 2D rendering model or by what HTML/CSS can render.
+
+Dali supports the following uses:
+* game programming
+* graphical design tools
+* innovative user interfaces and visual programming languages
