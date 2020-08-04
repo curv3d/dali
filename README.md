@@ -1,5 +1,7 @@
 # dali
 
+![](images/melting_watch.jpeg)
+
 **Dali** is a new kind of graphics API built on top of WebGPU.
 
 Dali is a high performance graphics API that runs on modern GPUs.
