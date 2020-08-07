@@ -32,3 +32,20 @@ Dali supports the following uses:
 
 Dali is coded in C++, but provides a C API so that it can be more easily integrated
 into other programming languages.
+
+Instead of a stateful, imperative interface (where you draw shapes onto a canvas, with
+a current pen position and a current transformation matrix), Dali has a composable, pure
+functional interface. A shape to be rendered is represented as a tree of immutable nodes, where leaf nodes
+are primitive shapes and colours, and interior nodes are graphical operations that combine and
+transform shapes and colours. Thanks to the signed distance field representation, there is a rich
+set of shape operators, plus the ability to define new ones, including boolean operators,
+non-affine transformations, blending and morphing,
+and a rich set of primitive shapes that can be represented exactly: not just polygons and spline curves,
+but a wide range of algebraic curves and surfaces, fractals, noise operators, etc.
+
+## Project Status
+We are in the planning stages for Demo 1, which will demonstrate high performance text rendering,
+combined with SDF shape operators that aren't available in widely used 2D rendering APIs.
+
+## How To Contribute
+Contact Doug Moen (doug@moens.org) for more information.
