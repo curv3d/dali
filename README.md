@@ -29,6 +29,7 @@ Dali supports the following uses:
 * game programming
 * graphical design tools
 * innovative user interfaces and visual programming languages
+* art and creative coding
 
 Dali is coded in C++, but provides a C API so that it can be more easily integrated
 into other programming languages.
@@ -42,6 +43,8 @@ set of shape operators, plus the ability to define new ones, including boolean o
 non-affine transformations, blending and morphing,
 and a rich set of primitive shapes that can be represented exactly: not just polygons and spline curves,
 but a wide range of algebraic curves and surfaces, fractals, noise operators, etc.
+
+See the [Wiki](https://github.com/dali3d/dali/wiki) for more details.
 
 ## Project Status
 We are in the planning stages for Demo 1, which will demonstrate high performance text rendering,
