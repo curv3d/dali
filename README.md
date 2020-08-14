@@ -50,5 +50,8 @@ See the [Wiki](https://github.com/dali3d/dali/wiki) for more details.
 We are in the planning stages for Demo 1, which will demonstrate high performance text rendering,
 combined with SDF shape operators that aren't available in widely used 2D rendering APIs.
 
+* [Design ideas for Demo 1 (Text Rendering)](https://github.com/dali3d/dali/wiki/Text-Rendering-(Demo-1))
+* [Prior art](https://github.com/dali3d/dali/wiki/Prior-Art) that I've looked at while researching text rendering.
+
 ## How To Contribute
 Contact Doug Moen (doug@moens.org) for more information.
