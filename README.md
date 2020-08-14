@@ -8,7 +8,8 @@ Dali is a high performance graphics API that runs on modern GPUs.
 Thanks to WebGPU, it is cross-platform, running either in a web browser
 using WASM, or running natively on Windows, Linux, MacOS, Android and iOS.
 
-Dali uses an extensible 2D/3D graphics model that goes far beyond postscript/SVG.
+Dali uses an extensible 2D/3D graphics model inspired by [Curv](https://github.com/curv3d/curv),
+but more general, with higher performance.
 * Dali begins with SVG style scalable 2D vector graphics (which are resolution independent).
 * You can define new graphics primitives procedurally, as operations on signed distance fields.
   These may be 2D or 3D, and are resolution independent.
