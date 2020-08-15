@@ -14,17 +14,19 @@ Dali uses an extensible 2D/3D graphics model inspired by [Curv](https://github.c
 but more general, with higher performance.
 * Dali begins with high quality TrueType text and SVG style scalable 2D vector graphics
   (which are resolution independent), plus resolution independent 3D primitives
-  such as spheres, cylinders, etc.
+  such as spheres, cylinders, etc. But there are also algebraic surfaces,
+  fractals, noise based modelling primitives, etc, which can all be represented exactly.
 * You can modify graphical objects using a rich set of SDF-derived operations:
-  * Non-affine transformations such as twist, bend, fish-eye zoom.
+  * Affine and non-affine transformations such as twist, bend, fish-eye zoom.
   * Graphics combinators such as booleans, blending, morphing, spatial repetition.
 * Dali is extensible: you can define new graphics primitives and combinators procedurally,
   as operations on signed distance fields. These may be 2D or 3D or both, and are resolution
   independent. You can reproduce any of the effects seen on [ShaderToy.com](https://shadertoy.com/).
   The Dali graphics engine evaluates SDF primitives much more efficiently than ShaderToy code:
   you can have a large number of primitives on the screen without slowing down.
-* Dali supports the usual graphical data structures: images, voxel grids
-  and triangle meshes.
+* Dali supports the usual graphical data structures: pixel maps, voxel grids
+  and triangle meshes, plus acceleration structures for ray-casting and querying
+  the signed distance to a boundary representation.
 * Colour is modelled either using procedural textures (which are resolution independent)
   or using texture maps (which are discrete).
 
@@ -32,7 +34,7 @@ Using Dali, there are no limits to what a graphical user interface can look like
 You aren't boxed in by the SVG 2D rendering model or by what HTML/CSS can render.
 
 Dali supports the following uses:
-* game programming
+* game programming (eg, as an add-on to a game engine)
 * graphical design tools
 * innovative user interfaces and visual programming languages
 * art and creative coding
@@ -44,11 +46,7 @@ Instead of a stateful, imperative interface (with a current pen position and a c
 where you are limited to compositing primitives onto a canvas,
 Dali has a composable, pure functional interface. A shape to be rendered is represented as a tree of immutable nodes, where leaf nodes
 are primitive shapes and colours, and interior nodes are graphical operations that combine and
-transform shapes and colours. Thanks to the signed distance field representation, there is a rich
-set of shape operators, plus the ability to define new ones, including boolean operators,
-non-affine transformations, blending and morphing, and spatial repetition.
-There is a rich set of primitive shapes that can be represented exactly: not just polytopes and splines,
-but a wide range of algebraic curves and surfaces, fractals, noise operators, etc.
+transform shapes and colours.
 
 See the [Wiki](https://github.com/dali3d/dali/wiki) for more details.
 
