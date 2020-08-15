@@ -12,8 +12,8 @@ using WASM, or running natively on Windows, Linux, MacOS, Android and iOS.
 
 Dali uses an extensible 2D/3D graphics model inspired by [Curv](https://github.com/curv3d/curv),
 but more general, with higher performance.
-* Dali begins with high quality TrueType text and SVG style scalable 2D vector graphics
-  (which are resolution independent), plus resolution independent 3D primitives
+* Dali begins with high quality TrueType text and SVG style scalable 2D vector graphics,
+  plus resolution independent 3D primitives
   such as spheres, cylinders, etc. But there are also algebraic surfaces,
   fractals, noise based modelling primitives, etc, which can all be represented exactly.
 * You can modify graphical objects using a rich set of SDF-derived operations:
