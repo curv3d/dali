@@ -3,7 +3,7 @@
 ![](images/melting_watch.jpeg)
 
 **Dali** is a powerful 2D/3D graphics API, based on signed distance fields, built with WebGPU.
-It provides an exceptionally rich graphics model for building responsive, non-traditional
+It provides an exceptionally rich and high level graphics model for building responsive, non-traditional
 user interfaces in games, UI research, graphic design tools, visual programming languages.
 
 Dali is a high performance graphics API that runs on modern GPUs.
