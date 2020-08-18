@@ -48,6 +48,9 @@ Dali has a composable, pure functional interface. A shape to be rendered is repr
 are primitive shapes and colours, and interior nodes are graphical operations that combine and
 transform shapes and colours.
 
+Dali has a "retained mode" API. You build a tree of graphical operations, then you load this tree into the GPU, which interprets and renders it. Animation and dynamic content are achieved by modifying uniform variables, and by modifying resources and nodes in the gtree. These tree modifications are synchronized with the GPU's copy of the tree.
+This would work well combined with a retained mode GUI.
+
 See the [Wiki](https://github.com/dali3d/dali/wiki) for more details.
 
 ## Project Status
